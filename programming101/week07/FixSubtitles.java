@@ -12,6 +12,9 @@ import java.nio.file.Paths;
  * @author Ivan Mehandzhiev
  */
 public class FixSubtitles {
+	/*
+	 * leave a comment
+	 */
 	public static void fixEncoding(Path path) throws IOException {
 		BufferedReader br = Files.newBufferedReader(path);
 		String str = new String(Files.readAllBytes(Paths
