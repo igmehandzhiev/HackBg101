@@ -5,8 +5,10 @@ public class LucasSeries {
 		if (n < 0) {
 			throw new IllegalArgumentException("Argument must be positive numnber.");
 		}
-		if (n <= 1)
+		if (n == 0)
 			return 1;
+		if (n == 1)
+			return 2;
 		return nthLucas(n - 1) + nthLucas(n - 2);
 	}
 
